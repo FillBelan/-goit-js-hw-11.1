@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  margin: 0;
+  line-height: 1.5;
+  background: rgb(254, 255, 112);
+  background: linear-gradient(90deg, rgba(254, 255, 112, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(254, 255, 112, 1) 100%);
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  background: rgb(0, 212, 255);
+  background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 10px;
+
+}
+
+.search-form input {
+  height: 35px;
+  outline: none;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+.search-form button {
+  border-radius: 5px;
+  background-color: rgb(250, 250, 250);
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: rgb(121, 255, 141);
+}
+
+.search-form button:focus {
+  background-color: rgb(121, 255, 141);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.photo-card {
+  width: 450px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.photo-card:hover {
+  box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.photo-card:focus {
+  box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.photo-card img {
+  width: 450px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.info {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 15px 35px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-item p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.load-more {
+  display: none;
+  border-radius: 5px;
+  background-color: rgb(250, 250, 250);
+  font-weight: 700;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.is-active {
+display: flex;
+}
+
+.load-more:hover {
+  background-color: rgb(121, 255, 141);
+}
+
+.load-more:focus {
+  background-color: rgb(121, 255, 141);
+}
